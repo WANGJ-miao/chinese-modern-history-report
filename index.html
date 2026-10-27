@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>近代史纲要汇报</title>
+
+    <!-- reveal.js styles -->
+    <link rel="stylesheet" href="reveal/dist/reveal.css">
+    <link rel="stylesheet" href="reveal/dist/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown="slides.md"
+                     data-separator="^\s*---\s*$">
+            </section>
+        </div>
+    </div>
+
+    <!-- Core library -->
+    <script src="reveal/dist/reveal.js"></script>
+
+    <!-- Plugins -->
+    <script src="reveal/dist/plugin/markdown.js"></script>
+    <script src="reveal/dist/plugin/math.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            plugins: [RevealMarkdown, RevealMath.KaTeX]
+        });
+    </script>
+</body>
+</html>
